@@ -65,6 +65,7 @@ a {
     width: 100%;
     bottom: 0;
     left: 0;
+    right: 0;
 }
 
 .home h1 {
@@ -237,9 +238,6 @@ a {
 @media (max-width: 767px) {
     .home-text {
         margin-bottom: 80px;
-    }
-    main {
-        flex-flow: column-reverse;
     }
 }
 

@@ -1,0 +1,58 @@
+.navbar {
+    width: 100%;
+}
+
+.nav-custom {
+    background: #396afc;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #2948ff, #396afc);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #2948ff, #396afc);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.btn-insc {
+    background-color: #fff;
+    transition: 0.3s;
+    color: gray;
+}
+
+.btn-insc:hover {
+    background-color: #6884e7;
+    color: #fff;
+}
+
+.btn-insc-sm {
+    background-color: #6884e7;
+    transition: 0.3s;
+    color: #fff;
+}
+
+.btn-insc-sm:hover {
+    background-color: #3950a5;
+    color: #fff;
+}
+
+.bg-active {
+    background-color: transparent;
+    transition: 0.3s;
+    color: #6884e7;
+}
+
+.link {
+    /* color: rgb(128, 128, 128); */
+    color: #FFF;
+    transition: 0.3s;
+}
+
+.link-sm {
+    color: #000;
+}
+
+.link:hover {
+    color: #6884e7;
+}
+
+.tebel-sedang {
+    font-weight: bold;
+}

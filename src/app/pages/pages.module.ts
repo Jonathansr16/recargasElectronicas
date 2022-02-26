@@ -1,5 +1,9 @@
+// MODULES
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SwiperModule } from 'swiper/angular';
+
+//COMPONENTS
 import { InicioComponent } from './inicio/inicio.component';
 import { ProductosComponent } from './productos/productos.component';
 import { ReportesComponent } from './reportes/reportes.component';
@@ -17,7 +21,8 @@ import { InscripcionComponent } from './inscripcion/inscripcion.component';
     InscripcionComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SwiperModule
   ],
   exports: [
     InicioComponent,

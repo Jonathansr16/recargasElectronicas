@@ -1,0 +1,140 @@
+section {
+    /*--======= About section =======--*/
+    --first-color: #0e2431;
+    --second-color: #6a59d1;
+    --third-color: #777;
+    /*--======= Hover color =======--*/
+    --hover-color: #614fd0;
+    /*--======= Background-color =======--*/
+    --body-bg-color: #fefefe;
+    --card-bg-color: #fff;
+    --modal-bg-color: #fff;
+    --bg-transparent-color: rgba(0, 0, 0, 0.1);
+    --transparent-color-01: rgba(0, 0, 0, 0.1);
+    --transparent-color-02: rgba(106, 89, 209, 0.1);
+    --line-color: #d7d7d7;
+    /*--======= Box-shadow =======--*/
+    --box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+    /*--======= font size=======--*/
+    --small-font-size: 0.9em;
+    --normal-font-size: 1em;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/*--======= Common styles for all sections =======--*/
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    position: relative;
+    width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0rem 2rem 2rem;
+}
+
+.sub-section {
+    position: relative;
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 6rem 0;
+}
+
+.section-title-01 {
+    font-size: 3em;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    background: linear-gradient(to top, transparent 0%, var(--first-color) 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: .1;
+    text-align: center;
+}
+
+.section-title-02 {
+    font-size: 2.5em;
+    font-weight: 700;
+    transform: translateY(-50px);
+    text-transform: capitalize;
+}
+
+.section-title-02:before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+    border: 0;
+    background: var(--second-color);
+}
+
+.container {
+    position: relative;
+    flex-direction: column;
+}
+
+
+/*--======= Products section =======--*/
+
+.our-offers .container .content {
+    width: 100%;
+}
+
+.product-description h5 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    max-width: 100%;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.service-card {
+    background: var(--card-bg-color);
+    border-bottom: 3px solid var(--second-color);
+    padding: 50px;
+    border-radius: 6px;
+    box-shadow: var(--box-shadow);
+}
+
+.service-card>i {
+    color: var(--second-color);
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+.service-card h5 {
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.service-card .learn-more-btn {
+    color: var(--third-color);
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.service-card .learn-more-btn i {
+    transition: .3s ease;
+}
+
+.service-card:hover .learn-more-btn i {
+    transform: translateX(10px);
+}
